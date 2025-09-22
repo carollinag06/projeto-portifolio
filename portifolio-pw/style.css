@@ -1,4 +1,4 @@
-
+ 
 * {
   margin: 0;
   padding: 0;
@@ -351,6 +351,12 @@ footer {
 
   #sobre{
     padding: 50px 30px;
+    box-sizing: border-box;
+  }
+
+  #sobre button{
+    font-size: 14px;
+    margin: 5px;
   }
 
   #projetos {
