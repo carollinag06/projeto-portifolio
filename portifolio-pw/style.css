@@ -1,0 +1,369 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.829);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e5ff;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #00e5ff;
+}
+
+
+/* ===== HOME ===== */
+#homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 60px;
+  gap: 60px;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.metade {
+  flex: 1;
+}
+
+/* Texto */
+.metade h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.metade h2 span {
+  color: #00e5ff;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.metade h3 {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.botoes button {
+  background: linear-gradient(45deg, #00e5ff, #007bb2);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+.botoes a button{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.botoes button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.5);
+}
+
+/* Imagem */
+#homepage .metade img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 75vh;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+
+}
+
+#homepage .metade img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SOBRE MIM ===== */
+#sobre {
+  padding: 100px 0;
+}
+
+.sobre-titulo {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #00e5ff;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+
+}
+
+.sobre-conteudo {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(45deg, #00e5ff, #007bb2);
+  
+}
+
+.sobre-par {
+  text-align: center;
+  font-size: 1rem;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.botoes-sobre {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.botoes-sobre button{
+  background-color: #007bb2;
+  border: 2px solid #003f64;
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+.botoes-sobre a button{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.botoes-sobre button i{
+  font-size: 17px;
+}
+
+.botoes-sobre button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 92, 102, 0.562);
+}
+
+/* ===== PROJETOS ===== */
+.projetos {
+  padding: 100px;
+}
+
+.projetos-titulo {
+  display: grid;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #00e5ff;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.projetos-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.projeto-item:hover {
+  box-shadow: 0 10 20px rgba(0, 229, 255, 0.6);
+  transform: translateY(-10px) scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.projeto-item {
+  background: linear-gradient(45deg, #00e5ff, #007bb2);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.info-projetos {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00e5ff;
+}
+
+.projeto-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+
+.projeto-par {
+  color: #f5f5f5;
+  line-height: 1.25rem;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  padding: 5rem 2rem;
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.bot-form {
+  background: linear-gradient(45deg, #00e5ff, #007bb2);
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  color: white;
+  font-size: 16px;
+}
+
+.bot-form:hover {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.contato-titulo {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #00e5ff;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+
+}
+
+.contato-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.829);
+  color: #f5f5f5;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  #homepage {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #homepage h2, h3{
+    font-size: 2rem;
+  }
+
+  #homepage .metade img {
+    width: 60%;
+    height: auto;
+  }
+
+  #sobre{
+    padding: 50px 30px;
+  }
+
+  #projetos {
+    padding: 50px 30px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+}

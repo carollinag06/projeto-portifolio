@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <h1>Joãozinho</h1>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="homepage">
+    <div class="metade">
+      <h2>EU SOU O <span>JOÃOZINHO <br> da SILVA</span></h2>
+      <h3>DESENVOLVEDOR FRONT-END</h3>
+
+      <div class="botoes">
+        <a href="#sobre"><button>Sobre mim</button></a>
+        <a href="#projetos"><button>Projetos</button></a>
+      </div>
+    </div>
+    <div class="metade">
+      <img src="fotos/download (12).jpg" alt="Foto de Joãozinho">
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2 class="sobre-titulo">Sobre mim</h2>
+    <div class="sobre-conteudo">
+      <p class="sobre-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate! Pariatur quod
+        ipsa impedit, cumque sed autem! Cupiditate ab tenetur est quos, sint ad neque magni iusto perspiciatis
+        necessitatibus sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim facilis earum eligendi
+        asperiores totam natus provident, consectetur tempore alias quidem exercitationem recusandae et ad! Odio error
+        voluptatem voluptatibus maxime aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum unde
+        voluptate nobis beatae provident ad consequatur nesciunt iusto molestiae qui, maxime incidunt laudantium
+        suscipit omnis eveniet tenetur vel vero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque a
+        eveniet distinctio cum debitis, modi ad molestias magnam aspernatur praesentium mollitia, illo consequatur
+        commodi labore nulla obcaecati iusto sunt asperiores?</p>
+
+      <div class="botoes-sobre">
+        <a href="curriculo-portifolio.pdf"><button>Download CV</button></a>
+        <a href="https://api.whatsapp.com/send/?phone=5561920025302&text&type=phone_number&app_absent=0"> <button><i
+              class="bi bi-whatsapp"></i></button></a>
+        <a href="https://www.instagram.com/"><button><i class="bi bi-instagram"></i></button></a>
+        <a href="https://www.linkedin.com/"><button><i class="bi bi-linkedin"></i></button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+
+    <div class="projetos-conteudo">
+      <div class="projeto-item">
+        <img src="fotos/casa.jpg" alt="Projeto Casa" class="projeto-img">
+        <h3 class="info-projetos">Casa</h3>
+        <p class="projeto-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, placeat. Fugiat a eveniet
+          odit maxime
+          voluptas, corporis adipisci ipsum nesciunt quos! Quia, porro eligendi? Nostrum harum commodi aspernatur. Amet,
+          magni.</p>
+      </div>
+
+      <div class="projeto-item">
+        <img src="fotos/predio.jpg" alt="Projeto Prédio" class="projeto-img">
+        <h3 class="info-projetos">Prédio</h3>
+        <p class="projeto-par">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio mollitia officia,
+          modi sapiente
+          voluptate minus nemo molestias et unde alias. Architecto neque animi adipisci cum recusandae inventore maiores
+          mollitia!</p>
+      </div>
+
+      <div class="projeto-item">
+        <img src="fotos/loja.jpg" alt="Projeto Loja" class="projeto-img">
+        <h3 class="info-projetos">Loja</h3>
+        <p class="projeto-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, beatae hic ea aperiam
+          tempore nemo, saepe
+          incidunt odit ad vel dicta autem corrupti odio voluptate mollitia aliquam pariatur voluptas. Iste!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="contato-titulo">Contato</h2>
+    <form class="contato-form" id="formulario">
+
+      <div class="form-group">
+        <input id="nome" name="nome" placeholder="Nome" class="campo-form" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <input id="email" name="email" placeholder="Email" class="campo-form" type="email" required>
+      </div>
+
+      <div class="form-group">
+        <textarea id="mensagem" name="mensagem" class="text-form" placeholder="Digite sua mensagem" required></textarea>
+      </div>
+
+      <div class="bot-form">
+        <button type="submit" class="bot-form">Enviar Whatsapp</button>
+      </div>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Joãozinho da Silva. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
